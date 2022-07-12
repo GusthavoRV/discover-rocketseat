@@ -1,4 +1,3 @@
-
 <!--
 Anatomia das Tags:
     *Abertura da Tag
@@ -7,43 +6,117 @@ Anatomia das Tags:
     *Elementos
 -->
 
-<h1> Olá Mundo</h1>
-
+<h1>Olá Mundo</h1>
 
 <!--
     *Tags sem fechamento
     *Atributos 
 -->
 
-<img src="chrome://branding/content/about-logo.png"  width="25px">
+<img src="chrome://branding/content/about-logo.png" width="25px" />
 
 <!--
     *Atributos booleanos
 -->
 
 <div>
-    <input type="text" disabled>
-</div>
-
-
-<div>
-    <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the <em>standard</em>  dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type 
-        specimen book. It has survived not only five centuries, but also the leap into 
-        electronic typesetting, remaining essentially unchanged.
-    </p>
+  <input type="text" disabled />
 </div>
 
 <div>
-    <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the <em>standard</em>  dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type 
-        specimen book. It has survived not only five centuries, but also the leap into 
-       <strong>electronic typesetting</strong>, remaining essentially unchanged.
-    </p>
-
-    <a href="https://google.com">Saiba mais</a>
+  <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the <em>standard</em> dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it to make a
+    type specimen book. It has survived not only five centuries, but also the
+    leap into electronic typesetting, remaining essentially unchanged.
+  </p>
 </div>
+
+<div>
+  <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the <em>standard</em> dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it to make a
+    type specimen book. It has survived not only five centuries, but also the
+    leap into <strong>electronic typesetting</strong>, remaining essentially
+    unchanged.
+  </p>
+
+  <a href="https://google.com">Saiba mais</a>
+</div>
+
+<!--
+    Listas:
+    *ordenadas
+    *não ordenadas
+-->
+<h1>Suco detox</h1>
+<h2>Ingredientes(lista ordenada)</h2>
+
+<ol>
+  <li>3 folhas de couve</li>
+  <li>1 laranja</li>
+  <li>1 pedaço de gengibre</li>
+  <li>300 ml de água</li>
+  <li>Adoçante a gosto</li>
+  <li>Gelo a gosto</li>
+</ol>
+
+<h2>Ingredientes(lista não ordenada)</h2>
+
+<ul>
+  <li>3 folhas de couve</li>
+  <li>1 laranja</li>
+  <li>1 pedaço de gengibre</li>
+  <li>300 ml de água</li>
+  <li>Adoçante a gosto</li>
+  <li>Gelo a gosto</li>
+</ul>
+
+<!--
+    Listas de descrição:
+    <dl>
+        <dt><\dt>
+        <dd><\dd>
+    <\dl>
+-->
+<h2>Glossário</h2>
+
+<dl>
+  <dt>Hypertext</dt>
+  <dd>É um hiper texto com possibilidades</dd>
+
+  <dt>Markup</dt>
+  <dd>Marcação de Texto</dd>
+
+  <dt>Language</dt>
+  <dd>Linguagem</dd>
+</dl>
+
+<!--
+    Citações:
+    *blockquote
+    *cite
+    *q
+-->
+<blockquote cite="http://developer.mozilla.org">
+  <p>Esta é uma citação tirada da Mozilla Developer Center.</p>
+</blockquote>
+
+<q cite="http://developer.mozilla.org">
+  <p>Esta é uma citação tirada da Mozilla Developer Center.</p>
+</q>
+
+<!--
+    Tags génericas
+    *<div><\div> → tem quebra de linha 
+    *<span><\span> → mantem em linha
+-->
+
+<div>
+  alguma
+  <div>coisa com div</div>
+</div>
+
+<span>alguma coisa<span> com span </span></span>
