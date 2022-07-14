@@ -139,3 +139,178 @@ Anatomia das Tags:
     <img src="https://source.unsplash.com/random" alt="" width="100px" />
   </a>
 </div>
+
+<!--
+  Tabelas
+  <table>
+    <tr> → criar linha
+      <th> <\th> → Titulo da coluna
+    <\tr>  
+
+    <tr>
+      <td> <\td> → conteúdo da celúla
+    <\tr>
+  <\table>
+-->
+<br />
+<br />
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Idade</th>
+  </tr>
+
+  <tr>
+    <td>Gusthavo</td>
+    <td>19</td>
+  </tr>
+
+  <tr>
+    <td>Caio</td>
+    <td>21</td>
+  </tr>
+</table>
+
+<!--
+  Aprimorando as tabelas:
+
+  <caption> <\caption> → tag para descrever o que é a tabela
+
+  <thead> <\theat> → tag para colocar o titulo das colunas
+
+  <tbody> <\tbody> → tag para colocar o conteúdo da tabela
+
+  <tfoot> <\tfoot> → tag para colocar o conteúdo do rodapé da tabela. Exemplo: Total
+-->
+
+<br />
+<br />
+
+<table>
+  <caption>
+    Pokemons e seus tipos
+  </caption>
+
+  <thead>
+    <tr>
+      <th>Nome do Pokemon</th>
+      <th>Tipo</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Ratata</td>
+      <td>Normal</td>
+    </tr>
+
+    <tr>
+      <td>Pikachu</td>
+      <td>Elétrico</td>
+    </tr>
+
+    <tr>
+      <td>Lucario</td>
+      <td>Lutador/Aço</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td>.</td>
+      <td>.</td>
+    </tr>
+    <tr>
+      <td>Total:</td>
+      <td>3</td>
+    </tr>
+  </tfoot>
+</table>
+
+<!--
+  Tabelas complexas
+  <colgroup> <\colgroup> → tag para agrupar colunas
+  rowspan="" → atributo para aumentar a qtde de espaço que a linha ocupa
+  colspan="" → atributo para aumentar a qtde de espaço que a coluna ocupa
+  scope="row ou col" → atributo para informar se o <th> é titulo de coluna ou de linha
+-->
+
+<br />
+<br />
+
+<table>
+  <caption>
+    Produzido x Vendido por Loja
+  </caption>
+
+  <colgroup>
+    <col />
+    <col span="2" style="background-color: red" />
+    <col span="2" style="background-color: blue" />
+  </colgroup>
+
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2" scope="colgroup">ICF</th>
+      <th colspan="2" scope="colgroup">FLAI</th>
+    </tr>
+
+    <tr>
+      <th scope="col">Produzido</th>
+      <th scope="col">Vendido</th>
+      <th scope="col">Produzido</th>
+      <th scope="col">Vendido</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th scope="row">Computadores</th>
+      <td>30</td>
+      <td>25</td>
+      <td>60</td>
+      <td>55</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Celulares</th>
+      <td>66</td>
+      <td>49</td>
+      <td>95</td>
+      <td>80</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Teclados</th>
+      <td>45</td>
+      <td>15</td>
+      <td>30</td>
+      <td>10</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Mouses</th>
+      <td>15</td>
+      <td>5</td>
+      <td>60</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Total</th>
+      <td>156</td>
+      <td>94</td>
+      <td>245</td>
+      <td>151</td>
+    </tr>
+  </tfoot>
+</table>
